@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+        <h2>Listas ordenadas</h2>
+            <ol type="I" start="">   <!-- Usando o TYPE dentro da TAG, podemos mudar o formato da marcação da listas (EX: 1, A, a, I, i...) -->
+                <li>Acordar          <!-- O fechamento da TAG <li> é opcional no HTML 5 -->
+                <li>Ligar para o Fulano
+                <li>Tomar café</li>
+                <li>Escovar os dentes</li>
+                <li>Ir para a faculdade</li>
+                <li>Ir para a casa</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+
+        <h2>Listas não ordenadas</h2>
+            <ul type="square"> <!-- Usando o TYPE nessa TAG, podemos mudar para DISC, CIRCLE e SQUARE -->
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Tomate</li>
+                <li>Alface</li>
+                <li>Manteiga</li>
+            </ul>
+
+        <h2>Juntando listas</h2>
+            <ol>
+                <li>Antigas</li>
+                    <ol type="a">
+                        <li>Clipper</li>
+                        <li>Fortran</li>
+                        <li>Delphi</li>
+                        <li>Visual basic</li>
+                    </ol>
+
+                <li>Novas</li>
+                    <ol type="a" start="5"> <!-- Para iniciar de um determinada letra/número, usamos o START. Mas mesmo se a lista for em letras, o html utiliza a númeração para iniciar a lista de onde queremos. Aqui no exemplo usamos o número 5 para a lista começar pela letra E -->
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ol>    
+            </ol>
+            
+        <h2>Meus jogos favoritos</h2>
+            <ol>
+                <li>SNE</li>
+                    <ul type="disc">
+                        <li>Donkey kong</li>
+                            <ul type="circle">
+                                <li>Donkey kong I</li>
+                                <li>Donkey kong II</li>
+                                <li>Donkey kong III</li>
+                            </ul>
+                        <li>Super Mario World</li>
+                    </ul>
+                <li>PS1</li>
+                    <ul type="disc">
+                        <li>Resident Evil</li>
+                        <li>Tony Hawk Pro Skater II</li>
+                    </ul>
+                <li>PS5</li>
+                    <ul type="disc">
+                        <li>Dark souls III</li>
+                        <li>God of war</li>
+                    </ul>
+            </ol> 
+            
+        <h2>Lista de definição</h2>
+            <dl> <!-- Lista de definições-->
+                <dt>HTML</dt> <!-- Termo-->
+                <dd>Linguagem de marcação para criação do conteúdo de um site</dd> <!-- Descrição-->
+                <dt>CSS</dt>
+                <dd>Linguagem de marcação para a criação do design de um site</dd>
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+            </dl>    
+</body>
+</html>

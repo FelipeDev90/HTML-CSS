@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vìdeos com HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está hospedado no meu próprio servidor</p>
+               
+                <!-- WIDTH determina o tamanho do vídeo na tela, POSTER é a imagem que vai ficar quando carregar o site, CONTROLS é para habilitar o player no vídeo-->
+            <video width="560" poster="imagem/foto-med.png" controls autoplay loop>
+                
+                <source src="midia/Meu Video.mp4.mp4" type="video/mp4">
+                
+                <!--Importante sempre colocar os formatos compativeis com todos os tipos de navegadores, dessa forma:-->
+                <source src="midia/Meu Video.m4v" type="video/mp4">
+                <source src="midia/Meu Video.webm" type="video/webm"> 
+                <source src="midia/Meu Video.ogv" type="video/ogg">
+                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+                <!--A ordem dos source é muito importante, pois os navegadores vão testando um por um na ordem que foi colocado no HTML-->
+
+                <!-- o Problema de utilizar essa aplicação para vídeos é que o arquivo fica muito pesado devido ao tamanho dos arquivos de vídeo. -->
+
+            </video>
+            
+    <h1>Inserindo vídeos do YouTube</h1>    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nCKwUB8EVbc?si=wXIQGO19-zU8s-1d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
